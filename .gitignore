@@ -1,0 +1,32 @@
+# Virtual Environments (This stops the 7000+ library files from being tracked)
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and credentials (CRITICAL for security)
+.env
+cookies.txt
+*.key
+*.pem
+
+# Local tracking and temporary files
+*.log
+processed_videos.txt
+temp_message.txt
+
+# Media files downloaded by the bot
+*.mp3
+*.mp4
+
+# Python system cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node packages (if any are downloaded locally)
+node_modules/
+
+# OS specific files
+.DS_Store
+Thumbs.db
