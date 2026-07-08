@@ -51,23 +51,33 @@ To bypass automated scraper blocks ("Sign in to confirm you're not a bot"), the 
 
 2. **Set up the virtual environment:**
 
+   ```bash
    python -m venv venv
    source venv/bin/activate # On Windows: .\venv\Scripts\activate
    pip install -r requirements.txt
+   ```
 
 3. **Install Mudslide (WhatsApp CLI):**
 
+   ```bash
    npm install mudslide
+   ```
 
 4. **Configure your Environment Variables: Create a .env file in the root directory:**
 
+   ```bash
    GEMINI_API_KEY=your_gemini_api_key_here
    YOUTUBE_CHANNEL_ID=your_youtube_channel_id_here
+   ```
 
 5. **Scan WhatsApp QR Code:**
 
+   ```bash
    npx mudslide login
+   ```
 
 6. **Run the Bot (Background Mode):**
 
+   ```bash
    nohup ./venv/bin/python3 bot.py > bot.log 2>&1 &
+   ```
